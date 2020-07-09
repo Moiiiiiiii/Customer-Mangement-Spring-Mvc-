@@ -1,4 +1,4 @@
-package com.luv2code.springdemo.dao;
+package com.spring.dao;
 
 import java.util.List;
 
@@ -7,9 +7,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
-import com.luv2code.springdemo.entity.Customer;
+import com.spring.entity.Customer;
+
 
 @Repository
 public class CustomerDAOImpl implements CustomerDAO {
