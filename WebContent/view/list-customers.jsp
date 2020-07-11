@@ -8,7 +8,7 @@
 	<title>List Customers</title>
 	
 	<!-- reference our style sheet -->
-
+<!-- "WebContent/view/list-customers.jsp"-->
 	<link type="text/css"
 		  rel="stylesheet"
 		  href="${pageContext.request.contextPath}/resources/css/style.css" />
@@ -41,6 +41,7 @@
 					<th>First Name</th>
 					<th>Last Name</th>
 					<th>Email</th>
+					<th>phone</th>
 					<th>Action</th>
 				</tr>
 				
@@ -61,7 +62,7 @@
 						<td> ${tempCustomer.firstName} </td>
 						<td> ${tempCustomer.lastName} </td>
 						<td> ${tempCustomer.email} </td>
-						
+						<td> ${tempCustomer.phone} </td>
 						<td>
 							<!-- display the update link -->
 							<a href="${updateLink}">Update</a>

@@ -12,6 +12,13 @@
 	<link type="text/css"
 		  rel="stylesheet"
 		  href="${pageContext.request.contextPath}/resources/css/add-customer-style.css">
+    <style>
+    	.error
+    	{
+    		font-weight: bold;
+    		color: red;
+    	}
+    </style> 
 </head>
 
 <body>
@@ -34,19 +41,37 @@
 				<tbody>
 					<tr>
 						<td><label>First name:</label></td>
-						<td><form:input path="firstName" /></td>
+						<td>
+							<form:input path="firstName" />
+							<form:errors path="firstName" cssClass="error"/>
+						</td>
+						
 					</tr>
 				
 					<tr>
 						<td><label>Last name:</label></td>
-						<td><form:input path="lastName" /></td>
+						<td><form:input path="lastName" />
+						<form:errors path="lastName" cssClass="error"/>
+						</td>
+						
 					</tr>
 
 					<tr>
 						<td><label>Email:</label></td>
-						<td><form:input path="email" /></td>
+						<td><form:input path="email" />
+						<form:errors path="email" cssClass="error"/>
+						</td>
+						
 					</tr>
-
+					
+					<tr>
+						<td><label>Phone:</label></td>
+						<td><form:input path="phone" />
+						<form:errors path="phone" cssClass="error"/>
+						</td>
+						
+					</tr>
+					
 					<tr>
 						<td><label></label></td>
 						<td><input type="submit" value="Save" class="save" /></td>
